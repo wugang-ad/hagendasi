@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>哈根达斯官网</title>
     <link rel="stylesheet" href="css/index.min.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/index.min.js"> </script>
 </head>
 <body>
     <header>
@@ -17,9 +19,39 @@
                     <li><a href="">官方网站</a> </li>
                     <li><input type="text"></li>
                 </ul>
-                <p>晋中市 <a href="#">[切换城市]</a></p>
+                    <p>晋中市 <a href="#">[切换城市]</a>
+                    <br><img src="img/header-tel.gif" alt="">订购电话：123456789</p>   
             </div>
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li class="nav_line"><a href="#">商品分类</a></li>
+            <li class="nav_line"><a href="#">明星产品</a></li>
+            <li class="nav_line"><a href="#">企业采购</a></li>
+            <li class="nav_line"><a href="#">品牌故事</a></li>
+            <li class="nav_line"><img src="img/shoppin-cart.jpg" alt=""><a href="#"> 购物车</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="banners">
+            <div class="number">
+                <div class="numbers"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="banner_img">
+                <img class="banner_img1" src="img/banner1.jpg" onclick="link('http://www.baidu.com',true)">
+                <img class="banner_img2" src="img/banner3.jpg" onclick="link('http://www.baidu.com',false)">
+                <img class="banner_img3" src="img/banner2.jpg" onclick="link('http://www.baidu.com',true)">
+                <img class="banner_img4" src="img/banner4.jpg" onclick="link('http://www.baidu.com',true)">
+                <img class="banner_img5" src="img/banner5.jpg" onclick="link('http://www.baidu.com',true)">
+            </div>
+            <script type="text/javascript">
+                loads();
+            </script>
+        </div>
+    </section>
+    
 </body>
 </html>

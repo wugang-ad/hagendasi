@@ -40,7 +40,11 @@ function fnImg(){
 }
 function fnJs(){
     return gulp.src('./src/js/*.js')
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
            .pipe(uglify())
+
         //    .pipe(concat())
             .pipe(rename({suffix : '.min'}))
            .pipe(gulp.dest('./dist/js'));

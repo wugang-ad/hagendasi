@@ -31,8 +31,16 @@ header{
 .nav{
     float: right;
     color: white; 
-    margin-top:10px ; 
+    margin-top:10px ;
+    p{
+        float: right;
+        text-align: right;
+        margin-top: 30px;
+        font-size: 14px;
+    }
 }
+  
+
 .nav ul{
     display: flex;
     font-size: 12px;
@@ -42,4 +50,124 @@ header{
   height: 16px;
   color: white;
   margin: 10px;
+}
+
+
+nav{
+    width: 100%;
+    background-color: #fadeb5;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        width: 980px;
+        margin: 0 auto;
+        text-align: center;
+        li{width: 16.5%;
+            a{
+                font-size: 12px;
+                color: #8c5b29;
+                line-height: 28px;
+            }
+        }
+        .nav_line{
+            background: url('../img/nav_line.jpg') no-repeat left top;
+        }
+    }
+}
+section{
+	width: 100%;
+	height: 330px;
+}
+.banners
+{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(200,200,200,0.5);
+}
+
+.banners:hover .click_left
+{
+	display: block;
+}
+
+.banners:hover .click_right
+{
+	display: block;
+}
+
+.click_left
+{
+	width: 3vw;
+	position: absolute;
+	z-index: 10;
+	left: 2vw;
+	display: none;
+}
+
+.click_right
+{
+	width: 3vw;
+	position: absolute;
+	z-index: 10;
+	right: 2vw;
+	display: none;
+}
+
+.click_left img,.click_right img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.number
+{
+	width: 100%;
+	height: 1vw;
+	line-height: 1vw;
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	bottom: 1.5vw;
+}
+
+.numbers
+{
+	display: inline-block;
+}
+
+.numbers span
+{
+	color: white;
+	font-size: 0.7vw;
+	display: block;
+	float: left;
+	width: 1vw;
+	height: 1vw;
+	line-height: 1vw;
+	text-align: center;
+	margin: 0 0.5vw;
+	padding: 0.1vw;
+	background-color: #eecd9c;
+}
+
+.numbers span:hover
+{
+	cursor: pointer;
+}
+
+.banner_img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.banner_img img
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	break-inside: 1;
 }
