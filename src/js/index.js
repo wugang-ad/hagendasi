@@ -148,3 +148,36 @@ function link(url,mode=true)
 		window.location.href = url;
 	}
 }
+
+//手风琴
+$(function(){
+	// 初始化 第一个 状态
+	jQuery('.dh ul li.curr').animate({width:'350px'},'slow');
+	jQuery('.dh ul li.curr .layer').animate({height:'0px'},'slow');
+	jQuery('.dh ul li.curr a span ').animate({ "background-position-x":"0",
+	"background-position-y":"-77px" },'slow');
+	jQuery('.sfq ul li').hover(function(){
+	  // 获取索引
+	   var _index = $(this).index();
+
+	   $(this).addClass('curr')
+	   .stop()
+	   .animate({
+		  width:'350px'
+	   },'slow')
+	   .siblings()
+	   .stop()
+	   .animate({
+		  width:'210px'
+	   },'slow')
+	   .removeClass('curr');
+
+	   $(this).find('.layer').stop().animate({height:'0px'},'slow').parent().siblings().find('.layer').stop().animate({
+		   height: '100%'
+	   },'slow'); 
+	   $(this).find('a span').stop().animate({"background-position-y":"-77px"},'slow').parent().parent().siblings().find('a span').stop().animate({"background-position-y":"0px"},'slow')
+	},function(){
+	  //移出
+
+	})
+});
