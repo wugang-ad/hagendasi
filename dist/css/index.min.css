@@ -209,11 +209,11 @@ section {
       overflow: hidden;
       width: 100%;
       height: 410px;
-      margin: 5px auto 0; }
+      margin: 5px auto 0;
+      padding-bottom: 10px; }
     .import .import2 .dh ul li {
       float: left;
       width: 210px;
-      overflow: hidden;
       height: 100%;
       position: relative;
       cursor: pointer; }
@@ -248,3 +248,7 @@ section {
       color: #00A39A; }
     .import .import2 .col2 {
       color: #fff; }
+  .import #imp {
+    height: 400px;
+    display: flex;
+    padding-top: 0; }

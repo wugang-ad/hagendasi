@@ -39,9 +39,6 @@ $(window).resize(function() {
 	$(".banners").css("line-height",banners_height+"px");
 
 });
-
-
-
 //页面文件加载完毕后自动调用
 $(document).ready(function(){
 
@@ -50,12 +47,6 @@ $(document).ready(function(){
 	timer = setInterval(auto_replace_banner, speed*1000);//banner切换计时器
 
 });
-
-
-
-//点击左右按钮更换banner
-
-
 //点击数字切换
 function manual_replace_banner(sj)
 {
@@ -155,11 +146,14 @@ $(function(){
 	jQuery('.dh ul li.curr').animate({width:'350px'},'slow');
 	jQuery('.dh ul li.curr .layer').animate({height:'0px'},'slow');
 	jQuery('.dh ul li.curr a span ').animate({ "background-position-x":"0",
-	"background-position-y":"-77px" },'slow');
+	"background-position-y":"-77px" },'0');
+	jQuery('#imp ul ').not('.curr1').hide();
+	
+
 	jQuery('.sfq ul li').hover(function(){
 	  // 获取索引
-	   var _index = $(this).index();
-
+	  var _index = $(this).index();
+         imp(_index);
 	   $(this).addClass('curr')
 	   .stop()
 	   .animate({
@@ -171,13 +165,15 @@ $(function(){
 		  width:'210px'
 	   },'slow')
 	   .removeClass('curr');
-
 	   $(this).find('.layer').stop().animate({height:'0px'},'slow').parent().siblings().find('.layer').stop().animate({
 		   height: '100%'
 	   },'slow'); 
-	   $(this).find('a span').stop().animate({"background-position-y":"-77px"},'slow').parent().parent().siblings().find('a span').stop().animate({"background-position-y":"0px"},'slow')
-	},function(){
-	  //移出
-
+	   $(this).find('a span').stop().css({"background-position-y":"-77px"}).parent().parent().siblings().find('a span').stop().css({"background-position-y":"0px"});
+	   
 	})
+	function imp(_index){
+		jQuery('#imp ul').eq(_index).addClass('curr1').show('slow').siblings().stop().hide('slow').removeClass('curr1');;
+		console.log(jQuery('.imp ul').eq(_index));
+	}
+	
 });
