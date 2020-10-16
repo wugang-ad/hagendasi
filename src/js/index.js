@@ -42,7 +42,7 @@ $(window).resize(function() {
 //页面文件加载完毕后自动调用
 $(document).ready(function(){
 
-	// banner_number();//banner页数高亮显示
+	banner_number();//banner页数高亮显示
 
 	timer = setInterval(auto_replace_banner, speed*1000);//banner切换计时器
 
@@ -121,7 +121,7 @@ function banner_number()
 		else
 		{
 			num_object.css("color" , "black");
-			num_object.css("backgroundColor" , "eecd9c");
+			num_object.css("backgroundColor" , "#eecd9c");
 		}
 	}
 }
