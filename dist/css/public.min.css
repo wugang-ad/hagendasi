@@ -108,6 +108,10 @@ nav {
 .nav_line:hover .nav1 {
   display: block; }
 
+.import {
+  width: 100%;
+  background: url(../img/minbackground.jpg); }
+
 footer {
   width: 100%;
   height: 90px;
@@ -134,3 +138,43 @@ footer {
     font-weight: normal; }
   footer .foot1 img {
     margin-left: 20px; }
+
+.ema {
+  width: 100%;
+  height: 112px;
+  background: url(../img/footer-buttomimg.jpg) no-repeat left bottom #b61541; }
+  .ema .emacon {
+    width: 980px;
+    height: 112px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+    .ema .emacon .emaconC {
+      margin-left: 160px;
+      margin-right: 45px; }
+      .ema .emacon .emaconC h3 {
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFF;
+        font-weight: normal; }
+      .ema .emacon .emaconC a img {
+        margin-top: 5px; }
+    .ema .emacon .imgFoot {
+      width: 150px;
+      height: 68px; }
+    .ema .emacon .emaconR {
+      vertical-align: bottom;
+      height: 56px; }
+      .ema .emacon .emaconR h3 {
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFF;
+        font-weight: normal;
+        margin-bottom: 5px; }
+      .ema .emacon .emaconR .inp {
+        display: flex;
+        align-content: center; }
+        .ema .emacon .emaconR .inp .button {
+          width: 88px;
+          height: 22px;
+          background: url(../img/emile-imgs.jpg) no-repeat; }

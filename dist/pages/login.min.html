@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/public.min.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="import">
+      <div class="">
+        <h4>哈根速递会员及哈根达斯俱乐部会员均可登录</h4>
+        <div class="log">
+          <div class="logL">
+            <b>账号密码登录</b><b>短信验证码登录</b>
+            <p>手机<input type="text" name="" id=""></p>
+            <p>密码<input type="password" name="" id=""></p>
+            <p>验证码<input type="text" id="code_input" value="" placeholder="请输入验证码"><i id="v_container"></i></p>
+          </div>
+          <div class="logR"></div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/gVerify.min.js"></script>
+    <script>
+      var verifyCode = new GVerify("v_container");
+      console.log(verifyCode)
+      document.getElementById("my_button").onclick = function(){
+        var res = verifyCode.validate(document.getElementById("code_input").value);
+        if(res){
+          alert("验证正确");
+        }else{
+          alert("验证码错误");
+        }
+      }
+    </script>
+    <div class="ema"></div>
+    <footer></footer>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>   
+          $(()=>{
+            $('header').load('public.min.html  .top');
+          $('nav').load('public.min.html  .ulP');
+          $('.ema').load('public.min.html  .emacon');
+          $('footer').load('public.min.html  .foot');
+          $('footer').load('public.min.html  .foot1');
+        })
+    </script>
+</body>
+</html>
