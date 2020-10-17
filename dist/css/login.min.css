@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.logC {
+  width: 980px;
+  height: 400px;
+  margin: 250px auto 250px auto; }
+  .logC h4 {
+    color: #752323; }
+  .logC .log {
+    height: 380px;
+    border: 1px solid #dedede;
+    display: flex; }
+    .logC .log .logL {
+      text-align: center;
+      background: #f9f6f1; }
+      .logC .log .logL h5 {
+        font-size: 12px;
+        font-family: '宋体';
+        font-weight: bold;
+        color: #9e002b;
+        text-align: left;
+        margin-left: 10px;
+        margin-top: 20px; }
+      .logC .log .logL h6 {
+        font-size: 16px;
+        font-family: '宋体';
+        font-weight: bold;
+        color: #8c5b29; }
+      .logC .log .logL .eml_1 {
+        display: none; }
+      .logC .log .logL .em_2 {
+        display: block; }
+      .logC .log .logL #eml {
+        width: 100px;
+        height: 20px;
+        background: url(../img/verify2.jpg) no-repeat;
+        font-size: 12px; }
+      .logC .log .logL #inp_1 {
+        width: 235px; }
+      .logC .log .logL .logA {
+        display: block;
+        width: 124px;
+        height: 30px;
+        margin: 60px 0  10px 166px;
+        background: #9e002b;
+        color: white;
+        line-height: 30px;
+        font-size: 13px; }
+      .logC .log .logL .logT {
+        display: flex; }
+        .logC .log .logL .logT .logT1 {
+          background: url(../img/red_line.jpg) no-repeat left top;
+          color: #8c5b29;
+          border-bottom: none; }
+        .logC .log .logL .logT .logT2 {
+          background: white;
+          color: #aaa; }
+        .logC .log .logL .logT b {
+          display: block;
+          text-align: center;
+          width: 330px;
+          height: 38px;
+          font-size: 16px;
+          line-height: 38px;
+          font-family: '宋体';
+          font-weight: bold;
+          border: 1px solid #dedede; }
+      .logC .log .logL p {
+        display: flex;
+        width: 450px;
+        height: 30px;
+        margin: 20px auto;
+        font-size: 13px; }
+        .logC .log .logL p span {
+          width: 150px;
+          height: 30px;
+          font-size: 16px; }
+        .logC .log .logL p input {
+          width: 250px;
+          margin: 0 10px; }
+        .logC .log .logL p i {
+          width: 50px;
+          font-style: normal;
+          font-size: 13px;
+          text-align: right;
+          line-height: 30px; }
+      .logC .log .logL .logP {
+        margin: 0 auto;
+        padding-left: 110px;
+        line-height: 15px;
+        height: 15px; }
+    .logC .log .logR {
+      padding-left: 30px;
+      border: 1px solid #dedede;
+      background: #f9f6f1; }
+      .logC .log .logR .connet {
+        margin-top: 10px;
+        background: url(../img/coop-icon.png) no-repeat;
+        font-size: 12px;
+        line-height: 17px;
+        height: 17px; }
+      .logC .log .logR h3 {
+        font-size: 16px;
+        color: #8c5b29;
+        padding: 20px 0 0 0; }
+      .logC .log .logR .logA1 {
+        height: 17px;
+        display: flex;
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 5px; }
+        .logC .log .logR .logA1 img {
+          width: 20px;
+          margin-right: 5px; }
+      .logC .log .logR .logA2 {
+        display: block;
+        width: 124px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #9e002b;
+        color: #fff;
+        font-size: 13px;
+        margin: 40px 0 30px 0; }
+      .logC .log .logR p {
+        font-size: 13px;
+        line-height: 18px; }
+      .logC .log .logR h4 {
+        color: #8c5b29;
+        font-size: 16px;
+        padding-top: 42px; }

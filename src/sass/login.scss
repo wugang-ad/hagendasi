@@ -1,0 +1,159 @@
+.logC{
+    width: 980px;
+    height: 400px;
+    margin: 250px auto 250px auto ;
+    h4{
+        color: #752323;
+    }
+    .log{
+        height: 380px;
+        border: 1px solid #dedede;
+        display: flex;
+        .logL{
+            text-align: center; 
+             background: #f9f6f1;
+             h5{
+                font-size: 12px;
+                font-family: '宋体';
+                font-weight: bold;
+                color: #9e002b;
+                text-align: left;
+                margin-left: 10px;
+                margin-top: 20px;
+             }
+             h6{
+                font-size: 16px;
+                font-family: '宋体';
+                font-weight: bold;
+                color: #8c5b29;
+             }
+             .eml_1{
+                 display: none;
+             }
+             .em_2{
+                 display: block;
+             }
+             #eml{
+                 width: 100px;
+                 height: 20px;
+                 background: url(../img/verify2.jpg)no-repeat;
+                 font-size: 12px;
+             }
+             #inp_1{
+                 width: 235px;
+             }
+            .logA{
+                display: block;
+                width:124px ;
+                height: 30px;
+                margin: 60px 0  10px 166px;
+                background: #9e002b;
+                color: white;
+                line-height: 30px;
+                font-size: 13px;
+            }
+            .logT{
+                display: flex;
+                .logT1{
+                    background: url(../img/red_line.jpg)no-repeat left top;
+                    color: #8c5b29;
+                    border-bottom:none ;
+                }
+                .logT2{
+                    background: white;
+                    color: #aaa
+                }
+                b{
+                    display: block;
+                    text-align: center;
+                    width: 330px;
+                    height: 38px;
+                    font-size: 16px;
+                    line-height: 38px;
+                    font-family: '宋体';
+                    font-weight: bold;
+                    border: 1px solid #dedede;
+                }
+            }
+            p{  display: flex;
+                width: 450px;
+                height: 30px;
+                margin: 20px auto;
+                font-size: 13px;
+                span{
+                        width: 150px;
+                        height: 30px;
+                        font-size: 16px;
+                }
+                input{
+                    width: 250px;
+                    margin:0 10px ;
+                }
+                i{
+                    width: 50px;
+                    font-style: normal;
+                    font-size: 13px;
+                    text-align: right;
+                    line-height: 30px;
+
+                }
+            }
+            .logP{
+                margin: 0 auto;
+                padding-left:110px ;
+                line-height: 15px;
+                height: 15px;
+            }
+        }
+        .logR{
+            padding-left: 30px;
+            border: 1px solid #dedede;
+            background: #f9f6f1;
+            .connet{
+                margin-top: 10px;
+                background: url(../img/coop-icon.png)no-repeat;
+                font-size: 12px;
+                line-height: 17px;
+                height: 17px;
+            }
+            h3{
+                font-size: 16px;
+                color: #8c5b29;
+                padding: 20px 0 0 0
+            }
+            .logA1{
+                height: 17px;
+                display: flex;
+                font-size: 13px;
+                line-height: 17px; 
+                margin-top: 5px;
+                img{
+                    width: 20px;
+                    margin-right: 5px;
+                }   
+            }
+            .logA2{
+                display: block;
+                width: 124px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                background: #9e002b;
+                color: #fff;
+                font-size: 13px;
+                margin:40px 0 30px 0;
+            }
+            p{
+                font-size: 13px;
+                line-height: 18px
+            }
+            h4{
+                color: #8c5b29;
+                font-size: 16px;
+                padding-top: 42px;
+            }
+
+        }
+    }
+    
+}
