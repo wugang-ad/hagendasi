@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/public.min.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <div class="ema"></div>
+    <footer></footer>
+
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>   
+        $(()=>{
+          $('header').load('public.min.html  .top');
+        $('nav').load('public.min.html  .ulP');
+        $('.ema').load('public.min.html  .emacon');
+        $('footer').load('public.min.html  .foot');
+        $('footer').load('public.min.html  .foot1');
+      })
+  </script>
+</body>
+</html>
