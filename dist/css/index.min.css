@@ -92,6 +92,7 @@ section {
         width: 212px;
         margin: 20px 15px; }
         .import .import1 ul li img {
+          cursor: pointer;
           display: block;
           width: 210px;
           height: 210px;
@@ -102,6 +103,7 @@ section {
           .import .import1 ul li p a {
             color: #000; }
         .import .import1 ul li b {
+          cursor: pointer;
           font-size: 12px; }
         .import .import1 ul li span {
           font-size: 18px;

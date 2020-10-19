@@ -55,6 +55,7 @@
           background: white;
           color: #aaa; }
         .logC .log .logL .logT b {
+          cursor: pointer;
           display: block;
           text-align: center;
           width: 330px;
@@ -66,19 +67,22 @@
           border: 1px solid #dedede; }
       .logC .log .logL p {
         display: flex;
-        width: 450px;
+        width: 500px;
         height: 30px;
         margin: 20px auto;
         font-size: 13px; }
         .logC .log .logL p span {
+          font-size: 12px;
+          color: #d7003b;
+          padding-left: 8px;
           width: 150px;
-          height: 30px;
-          font-size: 16px; }
+          height: 30px; }
         .logC .log .logL p input {
           width: 250px;
           margin: 0 10px; }
         .logC .log .logL p i {
-          width: 50px;
+          display: block;
+          width: 70px;
           font-style: normal;
           font-size: 13px;
           text-align: right;

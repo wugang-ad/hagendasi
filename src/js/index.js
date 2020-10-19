@@ -177,3 +177,9 @@ $(function(){
 	}
 	
 });
+$('.import1>ul').on('click','li',function(){
+	console.log(11);
+	// var str =`pages/product.min.html?name="${$(this).find('img').attr("src")}"`;
+	var name = $(this).find('img').attr('src');
+	window.location.href="pages/product.min.html?" + 'name';
+})

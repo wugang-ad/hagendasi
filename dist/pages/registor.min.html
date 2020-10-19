@@ -17,9 +17,10 @@
             <h5>哈根速递会员注册&nbsp;&nbsp;></h5>
             <h6>会员注册</h6>
             <p><i>手机:</i><input type="text" name="" id=""><span></span></p>
+            <p class="eml_1"></p>
             <p><i>验证码:</i><input type="text" id="code_input" value="" placeholder="请输入验证码"><span id="v_container"></span></p>
             <p><i>验证码:</i><input type="text" name="" id="inp_1" placeholder="请输入验证码"><input type="button" value="点击获取验证码" id="eml"></p>
-                          <a href="#" class="logA">注册</a>
+                          <a href="#" class="logA logB1">注册</a>
                           <p class="logP">注册即同意 <a href="">《哈根速递购物协议》</a></p>
                           <p class="logP">哈根速递的会员同时也是哈根达斯俱乐部的会员</p>
           </div>
@@ -41,16 +42,9 @@
     <footer></footer>
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/gVerify.min.js"></script>
+    <script src="../js/login.min.js"></script>
+    <script src="../js/cookie.min.js"></script>
     <script>  
-    var verifyCode = new GVerify("v_container");
-          document.getElementById("code_input").onblur = function(){
-            var res = verifyCode.validate(document.getElementById("code_input").value);
-            if(res){
-              alert("验证正确");
-            }else{
-              alert("验证码错误");
-            }
-      } 
           $(()=>{
             $('header').load('public.min.html  .top');
           $('nav').load('public.min.html  .ulP');

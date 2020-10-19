@@ -63,7 +63,7 @@
                     background: white;
                     color: #aaa
                 }
-                b{
+                b{cursor: pointer;
                     display: block;
                     text-align: center;
                     width: 330px;
@@ -76,21 +76,22 @@
                 }
             }
             p{  display: flex;
-                width: 450px;
+                width: 500px;
                 height: 30px;
                 margin: 20px auto;
                 font-size: 13px;
-                span{
+                span{    font-size: 12px;
+                        color: #d7003b;
+                        padding-left: 8px;
                         width: 150px;
                         height: 30px;
-                        font-size: 16px;
                 }
                 input{
                     width: 250px;
                     margin:0 10px ;
                 }
-                i{
-                    width: 50px;
+                i{display: block;
+                    width: 70px;
                     font-style: normal;
                     font-size: 13px;
                     text-align: right;
