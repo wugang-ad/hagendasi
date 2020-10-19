@@ -1,0 +1,65 @@
+.cartC{
+    width: 980px;
+    margin: 0 auto 80px;
+    p{
+        width:  630px;
+        height: 80px;
+        overflow: hidden;
+        margin: 50px auto;
+    }
+    .carP{
+        a{
+            color: #FFF;
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            font-family: Arial,"宋体";
+            background: #b61541;
+            border: 1px solid #c64669;
+            height: 28px;
+            width: 100px;
+            text-align: center;
+            line-height: 26px;
+            margin: 20px auto 0;
+        }
+        p{height: 35px;
+            display: flex;
+            cursor: pointer;
+            line-height: 34px;
+            margin:0;
+            
+            span{
+                display: flex;
+                align-items: center;
+                height: 34px;
+                width: 158px;
+                font-size: 12px;
+                // font-weight: normal;
+                // font-style: normal;
+                background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent;
+                background: none repeat scroll 0 0 #faf6ee;
+                b{
+                    margin: 0 10px;
+                }
+                i{
+                    font-style: normal;
+                    color: #b61541;
+                }
+            }
+            span:nth-of-type(1){
+                background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent;
+            }
+        }
+        ul{
+            display: block;
+            // overflow: hidden;
+            min-height: 120px;
+            font-size: 15px;
+            font-family: Arial,"宋体";
+            border: 1px solid #cfcecb;
+            text-align: center;
+            line-height: 120px;
+            background:#FFF url(../img/shopping-catrd-back.jpg) no-repeat  260px 30px;
+        }
+    }
+}
