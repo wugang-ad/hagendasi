@@ -177,9 +177,15 @@ $(function(){
 	}
 	
 });
-$('.import1>ul').on('click','li',function(){
-	console.log(11);
+$('.importA>ul').on('click','li',function(){
 	// var str =`pages/product.min.html?name="${$(this).find('img').attr("src")}"`;
 	var name = $(this).find('img').attr('src');
-	window.location.href="pages/product.min.html?" + 'name';
+	window.location.href="pages/product.min.html?" + 'name='+name;
+})
+$('.importB>ul').on('click','li',function(){
+	// var str =`pages/product.min.html?name="${$(this).find('img').attr("src")}"`;
+	var name = $(this).find('img').attr('src').split('/');
+	var name1 = name[1]+'/'+name[2];
+	console.log('name1');
+	window.location.href="product.min.html?" + 'name='+name1;
 })

@@ -10,6 +10,7 @@
   .import1 ul {
     display: flex; }
     .import1 ul li {
+      cursor: pointer;
       width: 212px;
       margin: 20px 15px; }
       .import1 ul li img {
