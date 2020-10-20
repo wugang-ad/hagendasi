@@ -62,6 +62,20 @@ $(function() {
                 let storage_str = storage.getItem('carts') ? storage.getItem('carts') : '';
 				// let storage_obj = convertStrToObj(storage_str);
 				let storage_obj = convertStrToObj(storage_str);
+				if(storage_str){
+					let storage_obj = convertStrToObj(storage_str);
+					for(let key in storage_obj){   
+					  let good = storage_obj[key];
+					  $('.nav2').append(`
+					  <ul>
+						  <li><img src="${good.src}" />数量：${good.num}</li>
+					  </ul>
+					  `);
+					  }
+					  }else{
+						  $('.nav2').append (`
+						  <a href="#"></a>`)
+					  }
                 if(imgU in storage_obj){
                     storage_obj[imgU].num =$('.inputJA').attr("value");
                 }else{
