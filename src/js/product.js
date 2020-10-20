@@ -4,6 +4,8 @@ $(()=>{
 	$('.ema').load('public.min.html  .emacon');
 	$('footer').load('public.min.html  .foot');
 	$('footer').load('public.min.html  .foot1');
+})
+$(function(){
 	let storage1 = window.localStorage;
     let storage_str1 = storage1.getItem('carts') ? storage1.getItem('carts') : '';
 	let storage_obj1 = convertStrToObj1(storage_str1);
