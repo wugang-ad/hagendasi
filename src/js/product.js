@@ -4,14 +4,12 @@ $(()=>{
 	$('.ema').load('public.min.html  .emacon');
 	$('footer').load('public.min.html  .foot');
 	$('footer').load('public.min.html  .foot1');
-	let storage = window.localStorage;
-    let storage_str = storage.getItem('carts') ? storage.getItem('carts') : '';
-				// let storage_obj = convertStrToObj(storage_str);
-	let storage_obj = convertStrToObj(storage_str);
-	if(storage_str){
-		let storage_obj = convertStrToObj(storage_str);
-		for(let key in storage_obj){   
-			let good = storage_obj[key];
+	let storage1 = window.localStorage;
+    let storage_str1 = storage1.getItem('carts') ? storage1.getItem('carts') : '';
+	let storage_obj1 = convertStrToObj1(storage_str1);
+	if(storage_str1){
+		for(let key in storage_obj1){   
+			let good = storage_obj1[key];
 			$('.nav2').append(`
 			<ul>
 				<li><img src="${good.src}" />数量：${good.num}</li>
@@ -21,6 +19,13 @@ $(()=>{
 	}else{
 		$('.nav2').append (`
 		 <a href="#"></a>`)
+	}
+	function convertStrToObj1(str){
+		if(!str){
+			return {};
+		}else{
+			return JSON.parse(str);
+		}
 	}
 })
 $(function() {
@@ -78,10 +83,8 @@ $(function() {
 		$('.buyP:last').click(function(){
 				let storage = window.localStorage;
                 let storage_str = storage.getItem('carts') ? storage.getItem('carts') : '';
-				// let storage_obj = convertStrToObj(storage_str);
-				let storage_obj = convertStrToObj(storage_str);
+				let storage_obj = convertStrToObj2(storage_str);
 				if(storage_str){
-					let storage_obj = convertStrToObj(storage_str);
 					for(let key in storage_obj){   
 					  let good = storage_obj[key];
 					  $('.nav2').append(`
@@ -106,18 +109,15 @@ $(function() {
                 }
                 //创建storage
                 storage.setItem('carts',JSON.stringify(storage_obj));
-
-                //修改购物车按钮中的 商品数量
-                // let num = parseInt(/(\d+)/.exec(that.buy.value)[1]);
-                // that.buy.value = `购物车(${++ num})`;
+				function convertStrToObj2(str){
+					if(!str){
+						return {};
+					}else{
+						return JSON.parse(str);
+					}
+				}
 		})
-		function convertStrToObj(str){
-			if(!str){
-				return {};
-			}else{
-				return JSON.parse(str);
-			}
-		}
+		
     }
 })
 
@@ -137,19 +137,11 @@ $('.more').hover(
 
 $(function(){
 	$(".porI").mouseover(function(){
-		// $(this).find("img").css("border-color","#FF0000").parent().siblings().find("img").css("border-color","#ccc");
-		
-		//attr设置或返回被选元素的属性值。
-		
-		// $("ol li").find("img").attr("src",$(this).find("img").attr("src"))
 		$(".check").find("img").attr("src",$(".Pimg").find("img").attr("src"))				
 	});
-	//bind 为每个匹配元素的特定事件绑定事件处理函数。
-	//width() 取得第一个匹配元素当前计算的宽度值（px）。
 	$(".zhezhao").bind({
 		mouseover:function(){
 			$(".check").css("display","block");
-			// $(".datu").css("display","block");
 		},
 		mouseout:function(){
             $(".check").css("display","none");
