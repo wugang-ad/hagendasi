@@ -6,47 +6,47 @@ $(()=>{
 	$('footer').load('public.min.html  .foot');
 	$('footer').load('public.min.html  .foot1');
 })
-// $(function() {
-// 	var reg = new RegExp("(^|&)name=([^&]*)(&|$)");
-// 	var r = window.location.search.substr(1).match(reg);
-// 	if (r != null) {
-// 		var imgU = unescape(r[2]);
-// 		$('.porB').append (`<div class="porL">
-// 		<div class="porI">
-// 			<div class="zhezhao"></div>
-// 			<div class="Pimg"><img src="../${imgU}" alt=""></div>
-// 			<div class="check"><img src="../${imgU}" alt=""></div> 
-// 		</div>
-// 	</div>
-// 	<div class="porR">
-// 		<h3>花艺爱浓</h3>
-// 		<h4>Blossom Of Love</h4>
-// 		<p>盛开的红色花朵，酸甜的草莓口味，配上香醇奶油，这一刻“莓”好食光带着祝福与真心，赠与挚爱的人。</p>
-// 		<hr>
-// 		<p>口味：香草味；草莓</p>
-// 		<p>价格：<span>¥ 298 </span></p>
-// 		<p>规格：<input type="button" value="600克 2-4人左右"><input type="button" value="1.1千克 5-8人左右"><span></span><span></span><span></span><input type="button" value="1.8千克 8人以上"></p>   
-// 		<p>数量：<span>-</span><input type="text" value="1"><span>+</span></p>
-// 		<p><input type="button" value="立即订购"><input type="button" value="加入购物车"></p>
-// 		<p><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href="" id="moreA"></a>更多<span>0</span></p>
-// 		<p><img src="../img/icon-xi.jpg" alt="">收藏商品</p>
-// 		<div class="more">
-// 			<h6>分享到</h6>
-// 			<ul>
-// 				<li><a href="">QQ空间</a><a href="">新浪微博</a></li>
-// 				<li><a href="">百度</a><a href="">人人网</a></li>
-// 				<li><a href="">腾讯微博</a><a href="">开心网</a></li>
-// 				<li><a href="">淘宝</a><a href="">豆瓣网</a></li>
-// 				<li><a href="">腾讯朋友</a><a href="">照片</a></li>
-// 				<li><a href="">好友网</a><a href="">腾讯新闻</a></li>
-// 				<li><a href="">淘宝</a><a href="">百度贴吧</a></li>
-// 				<li><a href="">小白</a><a href="">飞信</a></li>
-// 			</ul>
-// 			<h6><a href="">更多...</a></h6>
-// 		</div>
-// 	</div>`)
-// 	}
-// })
+$(function() {
+	var reg = new RegExp("(^|&)name=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null) {
+		var imgU = unescape(r[2]);
+		$('.porB').append (`<div class="porL">
+		<div class="porI">
+			<div class="zhezhao"></div>
+			<div class="Pimg"><img src="../${imgU}" alt=""></div>
+			<div class="check"><img src="../${imgU}" alt=""></div> 
+		</div>
+	</div>
+	<div class="porR">
+		<h3>花艺爱浓</h3>
+		<h4>Blossom Of Love</h4>
+		<p>盛开的红色花朵，酸甜的草莓口味，配上香醇奶油，这一刻“莓”好食光带着祝福与真心，赠与挚爱的人。</p>
+		<hr>
+		<p>口味：香草味；草莓</p>
+		<p>价格：<span>¥ 298 </span></p>
+		<p>规格：<input type="button" value="600克 2-4人左右"><input type="button" value="1.1千克 5-8人左右"><span></span><span></span><span></span><input type="button" value="1.8千克 8人以上"></p>   
+		<p>数量：<span>-</span><input type="text" value="1"><span>+</span></p>
+		<p><input type="button" value="立即订购"><input type="button" value="加入购物车"></p>
+		<p><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href="" id="moreA"></a>更多<span>0</span></p>
+		<p><img src="../img/icon-xi.jpg" alt="">收藏商品</p>
+		<div class="more">
+			<h6>分享到</h6>
+			<ul>
+				<li><a href="">QQ空间</a><a href="">新浪微博</a></li>
+				<li><a href="">百度</a><a href="">人人网</a></li>
+				<li><a href="">腾讯微博</a><a href="">开心网</a></li>
+				<li><a href="">淘宝</a><a href="">豆瓣网</a></li>
+				<li><a href="">腾讯朋友</a><a href="">照片</a></li>
+				<li><a href="">好友网</a><a href="">腾讯新闻</a></li>
+				<li><a href="">淘宝</a><a href="">百度贴吧</a></li>
+				<li><a href="">小白</a><a href="">飞信</a></li>
+			</ul>
+			<h6><a href="">更多...</a></h6>
+		</div>
+	</div>`)
+	}
+})
 
 
 
