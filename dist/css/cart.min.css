@@ -7,46 +7,63 @@
     height: 80px;
     overflow: hidden;
     margin: 50px auto; }
-  .cartC .carP a {
-    color: #FFF;
-    font-size: 12px;
-    font-weight: bold;
-    display: block;
-    font-family: Arial,"宋体";
-    background: #b61541;
-    border: 1px solid #c64669;
-    height: 28px;
-    width: 100px;
-    text-align: center;
-    line-height: 26px;
-    margin: 20px auto 0; }
-  .cartC .carP p {
-    height: 35px;
-    display: flex;
-    cursor: pointer;
-    line-height: 34px;
-    margin: 0; }
-    .cartC .carP p span {
-      display: flex;
-      align-items: center;
-      height: 34px;
-      width: 158px;
+  .cartC .carP {
+    min-height: 200px; }
+    .cartC .carP a {
+      color: #FFF;
       font-size: 12px;
-      background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent;
-      background: none repeat scroll 0 0 #faf6ee; }
-      .cartC .carP p span b {
-        margin: 0 10px; }
-      .cartC .carP p span i {
-        font-style: normal;
-        color: #b61541; }
-    .cartC .carP p span:nth-of-type(1) {
-      background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent; }
-  .cartC .carP ul {
-    display: block;
-    min-height: 120px;
-    font-size: 15px;
-    font-family: Arial,"宋体";
-    border: 1px solid #cfcecb;
-    text-align: center;
-    line-height: 120px;
-    background: #FFF url(../img/shopping-catrd-back.jpg) no-repeat 260px 30px; }
+      font-weight: bold;
+      display: block;
+      font-family: Arial,"宋体";
+      background: #b61541;
+      border: 1px solid #c64669;
+      height: 28px;
+      width: 100px;
+      text-align: center;
+      line-height: 26px;
+      margin: 20px auto 0; }
+    .cartC .carP p {
+      height: 35px;
+      display: flex;
+      cursor: pointer;
+      line-height: 34px;
+      margin: 0; }
+      .cartC .carP p span {
+        display: flex;
+        align-items: center;
+        height: 34px;
+        width: 158px;
+        font-size: 12px;
+        background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent;
+        background: none repeat scroll 0 0 #faf6ee; }
+        .cartC .carP p span b {
+          margin: 0 10px; }
+        .cartC .carP p span i {
+          font-style: normal;
+          color: #b61541; }
+      .cartC .carP p span:nth-of-type(1) {
+        background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent; }
+    .cartC .carP ul {
+      display: flex;
+      margin-top: 5px;
+      height: 40px;
+      justify-content: space-between; }
+      .cartC .carP ul li {
+        text-align: center;
+        line-height: 40px;
+        width: 80px; }
+      .cartC .carP ul img {
+        display: block;
+        width: 30px; }
+    .cartC .carP .ulA {
+      display: block;
+      min-height: 120px;
+      font-size: 15px;
+      font-family: Arial,"宋体";
+      border: 1px solid #cfcecb;
+      text-align: center;
+      line-height: 120px;
+      background: #FFF url(../img/shopping-catrd-back.jpg) no-repeat 260px 30px; }
+    .cartC .carP .ulB {
+      background-color: #dedede;
+      border: 1px solid #a38888; }

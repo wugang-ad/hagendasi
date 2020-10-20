@@ -87,6 +87,7 @@
         display: block;
         width: 36px; }
       .porC .porB .porR p:nth-of-type(5) span {
+        cursor: pointer;
         display: block;
         width: 22px;
         height: 22px;

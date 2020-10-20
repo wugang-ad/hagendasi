@@ -1,5 +1,4 @@
 $(()=>{
-	console.log('2222')
 	$('header').load('../pages/public.min.html  .top');
 	$('nav').load('public.min.html  .ulP');
 	$('.ema').load('public.min.html  .emacon');
@@ -26,8 +25,8 @@ $(function() {
 		<p>口味：香草味；草莓</p>
 		<p>价格：<span>¥ 298 </span></p>
 		<p>规格：<input type="button" value="600克 2-4人左右"><input type="button" value="1.1千克 5-8人左右"><span></span><span></span><span></span><input type="button" value="1.8千克 8人以上"></p>   
-		<p>数量：<span>-</span><input type="text" value="1"><span>+</span></p>
-		<p><input type="button" value="立即订购"><input type="button" value="加入购物车"></p>
+		<p>数量：<span class ="spanJ">-</span><input type="text" value="2"class ="inputJA"><span class ="spanA">+</span></p>
+		<p class="buyP"><input type="button" value="立即订购"><input type="button" value="加入购物车"></p>
 		<p><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href="" id="moreA"></a>更多<span>0</span></p>
 		<p><img src="../img/icon-xi.jpg" alt="">收藏商品</p>
 		<div class="more">
@@ -45,9 +44,50 @@ $(function() {
 			<h6><a href="">更多...</a></h6>
 		</div>
 	</div>`)
-	}
-})
+	var inputV =$('.inputJA').attr("value");
+		$('.spanJ').click(function(){
+			if(inputV <=1){
+				$('.inputJA').attr('value','1');
+			}else{
+				inputV--;
+				$('.inputJA').attr('value',inputV);
+			}
+		})
+		$('.spanA').click(function(){
+				inputV++;
+				$('.inputJA').attr('value', inputV);
+		})
+		$('.buyP:last').click(function(){
+				let storage = window.localStorage;
+                let storage_str = storage.getItem('carts') ? storage.getItem('carts') : '';
+				// let storage_obj = convertStrToObj(storage_str);
+				let storage_obj = convertStrToObj(storage_str);
+                if(imgU in storage_obj){
+                    storage_obj[imgU].num =$('.inputJA').attr("value");
+                }else{
+                    storage_obj[imgU] = {
+                        "name" : imgU,
+                        "price" : 289,
+                        "src" : imgU,
+                        "num" : $('.inputJA').attr("value")
+                    }
+                }
+                //创建storage
+                storage.setItem('carts',JSON.stringify(storage_obj));
 
+                //修改购物车按钮中的 商品数量
+                // let num = parseInt(/(\d+)/.exec(that.buy.value)[1]);
+                // that.buy.value = `购物车(${++ num})`;
+		})
+		function convertStrToObj(str){
+			if(!str){
+				return {};
+			}else{
+				return JSON.parse(str);
+			}
+		}
+    }
+})
 
 
 $('#moreA').hover(

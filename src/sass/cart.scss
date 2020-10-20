@@ -8,6 +8,7 @@
         margin: 50px auto;
     }
     .carP{
+        min-height: 200px;
         a{
             color: #FFF;
             font-size: 12px;
@@ -50,7 +51,21 @@
                 background: url(../img/selectmenu.png) no-repeat scroll -5px -3px transparent;
             }
         }
-        ul{
+        ul{display: flex;
+            margin-top: 5px;
+            height: 40px;
+            justify-content: space-between;
+            li{
+                text-align: center;
+                line-height: 40px;
+                width: 80px;
+            }
+            img{
+                display: block;
+                width: 30px;
+            }
+        }
+        .ulA{
             display: block;
             // overflow: hidden;
             min-height: 120px;
@@ -60,6 +75,10 @@
             text-align: center;
             line-height: 120px;
             background:#FFF url(../img/shopping-catrd-back.jpg) no-repeat  260px 30px;
+        }
+        .ulB{
+            background-color: #dedede;
+            border: 1px solid #a38888 ;
         }
     }
 }
