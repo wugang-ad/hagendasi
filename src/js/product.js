@@ -6,31 +6,7 @@ $(()=>{
 	$('footer').load('public.min.html  .foot1');
 	$('.push').load('public.min.html .push1');
 })
-$(function(){
-	let storage1 = window.localStorage;
-    let storage_str1 = storage1.getItem('carts') ? storage1.getItem('carts') : '';
-	let storage_obj1 = convertStrToObj1(storage_str1);
-	if(storage_str1){
-		for(let key in storage_obj1){   
-			let good = storage_obj1[key];
-			$('.nav2').append(`
-			<ul>
-				<li><img src="${good.src}" />数量：${good.num}</li>
-			</ul>
-		 	`);
-		}
-	}else{
-		$('.nav2').append (`
-		 <a href="#"></a>`)
-	}
-	function convertStrToObj1(str){
-		if(!str){
-			return {};
-		}else{
-			return JSON.parse(str);
-		}
-	}
-})
+
 $(function() {
 	var reg = new RegExp("(^|&)name=([^&]*)(&|$)");
 	var r = window.location.search.substr(1).match(reg);

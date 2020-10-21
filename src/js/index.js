@@ -206,7 +206,7 @@ $(function(){
         }
         }else{
             $('.nav2').append (`
-			<a href="#"></a>`)
+			<a href="#">您的购物车还没有产品</a>`)
         }
 })
 function convertStrToObj(str){
