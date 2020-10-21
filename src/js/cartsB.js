@@ -8,7 +8,7 @@ $('nav').on('mouseenter','.nav2',function(){
         let good = storage_obj[key];
         $('.nav2').append(`
         <ul>
-            <li><img src="${good.src}" />数量：${good.num}</li>
+            <li><img src="../${good.src}" />数量：${good.num}</li>
         </ul>
         `);
         }
@@ -20,5 +20,11 @@ $('nav').on('mouseenter','.nav2',function(){
 $('nav').on('mouseleave','.nav2',function(){
 	$('.nav2').html(`<b>全部产品</b>`);
 })
-
+function convertStrToObj(str){
+    if(!str){
+        return {};
+    }else{
+        return JSON.parse(str);
+    }
+}
         
