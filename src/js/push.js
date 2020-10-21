@@ -1,3 +1,3 @@
-$('.pushS').on('click',function(){
+$('.push').on('click','.pushS',function(){
     $('.push').css('display','none');
 })

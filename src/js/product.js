@@ -1,10 +1,10 @@
 $(()=>{
-	$('header').load('pages/public.min.html  .top');
+	$('header').load('public.min.html  .top');
 	$('nav').load('public.min.html  .ulP');
 	$('.ema').load('public.min.html  .emacon');
 	$('footer').load('public.min.html  .foot');
 	$('footer').load('public.min.html  .foot1');
-	$('body').load('public.min.html .push');
+	$('.push').load('public.min.html .push1');
 })
 $(function(){
 	let storage1 = window.localStorage;

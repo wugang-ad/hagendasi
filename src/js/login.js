@@ -1,3 +1,11 @@
+$(()=>{
+	$('header').load('public.min.html  .top');
+	$('nav').load('public.min.html  .ulP');
+	$('.ema').load('public.min.html  .emacon');
+	$('footer').load('public.min.html  .foot');
+	$('footer').load('public.min.html  .foot1');
+	$('.push').load('public.min.html .push1');
+})
 $('.logT').on('click','b',function(){
     $(this).siblings().removeClass('logT1').addClass('logT2');
     $(this).removeClass('logT2').addClass('logT1');

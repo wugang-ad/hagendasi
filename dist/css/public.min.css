@@ -217,6 +217,7 @@ footer {
     width: 20px;
     height: 20px;
     float: right;
+    cursor: pointer;
     background: url(../img/popy_close.png) no-repeat; }
   .push p {
     width: 350px;
