@@ -75,6 +75,11 @@
             text-align: center;
             line-height: 120px;
             background:#FFF url(../img/shopping-catrd-back.jpg) no-repeat  260px 30px;
+            li{
+                display: block;
+                width: 100%;
+                line-height: 120px;
+            }
         }
         .ulB{
             background-color: #dedede;

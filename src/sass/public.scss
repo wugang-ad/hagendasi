@@ -231,3 +231,83 @@ footer{
 		}
 	}
 }
+
+.push{
+	width: 562px;
+    height: 158px;
+    background: #fff url(../img/popy_cor-bg.png) 10px bottom no-repeat;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -281px;
+    margin-top: -150px;
+    z-index: 200;
+	border: 3px solid #b89b5b;
+	overflow: hidden;
+	span{
+		display: block;
+		margin-top:3px ;
+			margin-right: 5px;
+		width: 20px;
+		height: 20px;
+		float: right;
+		background: url(../img/popy_close.png) no-repeat ;
+	}
+	p{
+		
+		width: 350px;
+		height: 35px;
+		display: flex;
+		float: right;
+		span{margin-top:3px ;
+			margin-right: 5px;
+			width: 23px;
+			height: 23px;
+			background: url(../img/popy_icon.png) no-repeat;
+		}
+		b{
+			display: block;
+			color: #fff;
+			text-align: center;
+			font-size: 13px;
+			height: 23px;
+			line-height: 23px;
+			width: 76px;
+			background: url(../img/popy_cor-btn3.png);
+			margin: 1px 60px ;
+
+		}
+	}
+	p:first-of-type{
+		background: url(../img/popy_cor-line.png) no-repeat left bottom;
+		margin-top:30px ;
+		font-size: 22px;
+		color: #cc034b;
+		font-weight: bold;	
+		font-family: Arial,"宋体";
+	}
+	p:nth-of-type(2){
+		color: #cc034b;
+		font-size: 12px;
+		line-height: 35px;
+		margin-top: 20px;
+		input{
+			display: inline-block;
+			width: 125px;
+			height: 22px;
+			line-height: 22px;
+			border: 1px solid #d6d6d6;
+			text-align: center;
+			outline: 0;
+			color: #989898;
+			margin: auto 0;
+		}
+		a{
+			color: #cc034b;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: underline;
+			margin-left: 10px
+		}
+	}
+}

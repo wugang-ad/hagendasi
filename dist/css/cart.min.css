@@ -64,6 +64,10 @@
       text-align: center;
       line-height: 120px;
       background: #FFF url(../img/shopping-catrd-back.jpg) no-repeat 260px 30px; }
+      .cartC .carP .ulA li {
+        display: block;
+        width: 100%;
+        line-height: 120px; }
     .cartC .carP .ulB {
       background-color: #dedede;
       border: 1px solid #a38888; }
