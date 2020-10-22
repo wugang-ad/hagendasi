@@ -36,19 +36,20 @@ $(function(){
             <li class="delL">删除</li>
            </ul>
         `);
+            $('.carP').on('click','.delL',function(){
+                delete storage_obj[good.src];
+                storage.setItem('carts',JSON.stringify(storage_obj));
+                $(this).parent().remove();
+            })
         }
-        }else{
+    }else{
             $('.carP').append (`<ul  class="ulA">
                 <li>购物车无商品，请先去选择商品</li>
             </ul>
             <a href="#">返回去购物</a>`)
-        }
+    }
     $('.proNum').html(numB);
-    $('.carP').on('click','.delL',function(){
-        delete storage_obj[id];
-        storage.setItem('carts',JSON.stringify(storage_obj));
-        $(this).parent().remove();
-    })
+   
 })
 function convertStrToObj(str){
     if(!str){
