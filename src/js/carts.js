@@ -23,7 +23,7 @@ $(function(){
         `);
       
       var numB = 0;
-      for(let key in storage_obj){   
+        for(let key in storage_obj){   
         let good = storage_obj[key];
         numB+=parseInt(good.num);
         $('.carP').append(`
@@ -36,13 +36,13 @@ $(function(){
             <li class="delL">删除</li>
            </ul>
         `);
-            $('.carP').on('click','.delL',function(){
-                delete storage_obj[key];
-                storage.setItem('carts',JSON.stringify(storage_obj));
-                numB -=parseInt(good.num);
-                $(this).parent().remove();
-                $('.proNum').html(numB);
-            })
+        $('.carP').on('click','.delL',function(){
+            delete storage_obj[`${good.src}`];
+            storage.setItem('carts',JSON.stringify(storage_obj));
+            numB -=parseInt(good.num);
+            $(this).parent().remove();
+            $('.proNum').html(numB);
+        })
         }
     }else{
             $('.carP').append (`<ul  class="ulA">
