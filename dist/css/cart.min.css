@@ -55,6 +55,8 @@
       .cartC .carP ul img {
         display: block;
         width: 30px; }
+      .cartC .carP ul .delL {
+        cursor: pointer; }
     .cartC .carP .ulA {
       display: block;
       min-height: 120px;
