@@ -23,6 +23,11 @@ $(function(){
             <li>删除</li>
             </ul>
             `);
+        }else{
+            $('.carP').append (`<ul  class="ulA">
+                <li>购物车无商品，请先去选择商品</li>
+                </ul>
+                <a href="#">返回去购物</a>`)
         }   
           var numB = 0;
         for(let key in storage_obj){   
