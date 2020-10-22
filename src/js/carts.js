@@ -36,7 +36,7 @@ $(function(){
             <li class="delL">删除</li>
            </ul>
         `);
-        $('.carP').on('click','.delL',function(){
+        $('.carP ul').on('click','.delL',function(){
             console.log(good.src);
             delete storage_obj[good.src];
             storage.setItem('carts',JSON.stringify(storage_obj));
