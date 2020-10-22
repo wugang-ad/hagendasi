@@ -11,7 +11,7 @@ $(function(){
     let storage = window.localStorage;
     let storage_str = storage.getItem('carts');
     let storage_obj = convertStrToObj(storage_str);
-    if(!storage_str ==''){
+    if(!storage_str ==''&&!storage_str =='{}'){
             $('.carP').append(`
             <ul class="ulB">
             <li>图片</li>
