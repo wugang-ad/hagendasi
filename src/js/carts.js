@@ -12,7 +12,7 @@ $(function(){
     let storage_str = storage.getItem('carts');
     let storage_obj = convertStrToObj(storage_str);
     if(storage_str){
-        if(!storage.getItem('carts') == '{}'){
+        if(storage.getItem('carts') != '{}'){
              $('.carP').append(`
             <ul class="ulB">
             <li>图片</li>
@@ -25,10 +25,10 @@ $(function(){
             `);
         }else{
             $('.carP').append (`<ul  class="ulA">
-                <li>购物车无商品，请先去选择商品</li>
-                </ul>
-                <a href="#">返回去购物</a>`)
-        }   
+            <li>购物车无商品，请先去选择商品</li>
+            </ul>
+            <a href="#">返回去购物</a>`)
+        }
           var numB = 0;
         for(let key in storage_obj){   
             let good = storage_obj[key];
@@ -73,8 +73,7 @@ $(function(){
             </ul>
             <a href="#">返回去购物</a>`)
     }
-    $('.proNum').html(numB);
-    
+    $('.proNum').html(numB);   
 })
 function convertStrToObj(str){
     if(!str){
