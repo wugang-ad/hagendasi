@@ -39,7 +39,9 @@ $(function(){
             $('.carP').on('click','.delL',function(){
                 delete storage_obj[good.src];
                 storage.setItem('carts',JSON.stringify(storage_obj));
+                numB -=parseInt(good.num);
                 $(this).parent().remove();
+                $('.proNum').html(numB);
             })
         }
     }else{
