@@ -11,8 +11,9 @@ $(function(){
     let storage = window.localStorage;
     let storage_str = storage.getItem('carts');
     let storage_obj = convertStrToObj(storage_str);
-    if(!storage_str ==''&&!storage_str =='{}'){
-            $('.carP').append(`
+    if(storage_str){
+        if(!storage.getItem('carts') == '{}'){
+             $('.carP').append(`
             <ul class="ulB">
             <li>图片</li>
             <li>产品</li>
@@ -22,7 +23,7 @@ $(function(){
             <li>删除</li>
             </ul>
             `);
-          
+        }   
           var numB = 0;
         for(let key in storage_obj){   
             let good = storage_obj[key];
