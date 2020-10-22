@@ -18,7 +18,7 @@ $(function(){
         <li>价格</li>
         <li>数量</li>
         <li>总价</li>
-        <li class="delL">删除</li>
+        <li>删除</li>
         </ul>
         `);
       
@@ -33,6 +33,7 @@ $(function(){
             <li>${good.price}</li>
             <li>${good.num}</li>
             <li class="total">${good.price * good.num}</li>
+            <li class="delL">删除</li>
            </ul>
         `);
         }
