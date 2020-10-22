@@ -37,7 +37,7 @@ $(function(){
            </ul>
         `);
             $('.carP').on('click','.delL',function(){
-                delete storage_obj[imgU];
+                delete storage_obj[key];
                 storage.setItem('carts',JSON.stringify(storage_obj));
                 numB -=parseInt(good.num);
                 $(this).parent().remove();
