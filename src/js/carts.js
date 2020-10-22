@@ -36,11 +36,11 @@ $(function(){
             <li class="delL">删除</li>
            </ul>
         `);
-        $('.carP ul').on('click','.delL',function(){
+        $('.carP').on('click','.delL',function(){
             console.log(good.src);
+            numB -=parseInt(good.num);
             delete storage_obj[good.src];
             storage.setItem('carts',JSON.stringify(storage_obj));
-            numB -=parseInt(good.num);
             $(this).parent().remove();
             $('.proNum').html(numB);
         })
